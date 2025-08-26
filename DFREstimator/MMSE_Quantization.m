@@ -31,8 +31,17 @@ var_kyber_compression_noise=Ll_range.^2*pmf_Ll'
 %quantiztion: i.e., var_kyber_compression_noise > var_MMSE_quantization_noise
 
 [partition,codebook] = lloyds(training_set,len);
-[index,quants] = quantiz(training_set,partition,codebook);
-% mse_lloyds=(norm(training_set-quants)^2)/length(training_set)
+
+%matlab general quantiz function
+% [index,quants] = quantiz(training_set,partition,codebook);
+
+%Faster quantiz functon, used in Arm DS C project
+quants=zeros(1, q);
+for i=1:1:q
+    res= findClosestInSortedFloatArray(codebook, training_set(i));
+    quants(i)=res.element;
+end
+
 
 Ll_err=(training_set-quants);
 Ll_range=unique(Ll_err);
@@ -48,3 +57,4 @@ var_MMSE_quantization_noise=Ll_range.^2*pmf_Ll'
 %save Cudx.mat  pmf_Ll Ll_range
 
 var_kyber_compression_noise>var_MMSE_quantization_noise
+
