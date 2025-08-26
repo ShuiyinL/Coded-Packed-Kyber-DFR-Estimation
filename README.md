@@ -1,5 +1,5 @@
 ### Coded-Packed-Kyber-DFR-Estimation
-Source codes for the paper: Shuiyin Liu, Amin Sakzad "Compact Lattice-Coded (Multi-Recipient) Kyber without CLT Independence Assumption"
+DFR estimation for the paper: Shuiyin Liu, Amin Sakzad "Compact Lattice-Coded (Multi-Recipient) Kyber without CLT Independence Assumption"
 # Acknowledgements
 This project uses the following codes 
 - [Security Estimation Scripts for Kyber and Dilithium] in https://github.com/pq-crystals/security-estimates
