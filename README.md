@@ -20,7 +20,7 @@ proba_util.py
 
 Kyber_failure.py
 * p2_cyclotomic_final_error_distribution(ps,LloydCu,LloydCv, MMSE_Q): construct the final error distribution of Kyber
-  * set MMSE_Q = 1 for MMSE q=quantization; MMSE_Q = 0 for original Kyber quantization
+  * set MMSE_Q = 1 for MMSE quantization; MMSE_Q = 0 for original Kyber quantization
   * MMSE_Q = 1: Replace original Kyber compression error distribution by MMSE quantization noise distribution: (Rc=LloydCu, R2 =LloydCv)
 
 Dataset: Cu9-11.mat, Cv3-6.mat
