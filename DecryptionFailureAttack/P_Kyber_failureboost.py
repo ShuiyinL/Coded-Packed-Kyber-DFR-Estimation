@@ -94,7 +94,7 @@ def failureboosting(n, n2, thres, s, sprime, e, eprime, eprimeprime, errorCorrec
 
 from Parameters_P_Kyber import P_Kyber768,  P_Kyber1024, Kyber768, Kyber1024 
 
-toplot = [P_Kyber1024] # change to P_Kyber1024, Kyber768, Kyber1024 
+toplot = [P_Kyber1024] # change to Kyber768, P_Kyber1024, Kyber768, Kyber1024 
 import pickle
 import os.path
 for i in toplot:
