@@ -5,7 +5,7 @@ This project uses the following codes
 - [Security Estimation Scripts for Kyber and Dilithium] in https://github.com/pq-crystals/security-estimates
 - [Decryption Failure Attack Estimator] in https://github.com/KULeuven-COSIC/PQCRYPTO-decryption-failures/tree/master/DecryptionFailureAttack
 
-### DFR Estimator in folder 'DFREstimator'
+### DFR Estimator is located in the `DFREstimator` folder.
 P_L_Kyber.py
 * Compute the DFR and CER for 
   * Uncoded P_{\ell}-Kyber, for any \ell >=1
