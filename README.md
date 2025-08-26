@@ -32,3 +32,9 @@ Dataset: Cu9-11.mat, Cv3-6.mat
 P_Kyber_failureboost.py
 * change the value of `XXXX` in `toplot = [XXXX]` to select the target, where `XXXX` can be one of: `P_Kyber768`, `P_Kyber1024`, `Kyber768`, or `Kyber1024`
 * For reference, the precomputed values of α and β are stored in the files named "P_KyberXXXX.pkl" or "KyberXXXX.pkl"
+
+Some small changes in the original functions in https://github.com/KULeuven-COSIC/PQCRYPTO-decryption-failures/tree/master/DecryptionFailureAttack
+
+Parameters_P_Kyber.py (updated version of NISTschemes.py)
+ * set KyberXXX['e'] = KyberXXX['s'] to reflect that the public key remains uncompressed in the final version of Kyber
+ * The original Kyber compression noise distributions u and u_2 have been replaced with those derived from MMSE quantization
