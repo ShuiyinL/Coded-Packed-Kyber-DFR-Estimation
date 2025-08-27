@@ -26,6 +26,7 @@ Kyber_failure.py
 Dataset: Cu9-11.mat, Cv3-6.mat
 * The MMSE quantization noise distributions: LloydCu and LloydCv
 * can be reproduced by MMSE_Quantization.m with dx= 3-6, 9-11
+* findClosestInSortedFloatArray.m: a faster `quantiz` function compared to general binary search or MATLAB original `quantiz` function.
 
 ### DF Attack Estimator is located in the `DecryptionFailureAttack` folder
 
