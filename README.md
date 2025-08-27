@@ -8,7 +8,7 @@ This project uses the following codes
 ### DFR Estimator is located in the `DFREstimator` folder
 P_L_Kyber.py
 * Compute the DFR and CER for 
-  * Uncoded P_{\ell}-Kyber, for any \ell >=1
+  * Uncoded P_{\ell}-Kyber, for any \ell >1
   * Coded P_{\ell}-Kyber, for \ell= 8 (E8 lattice), 16 (BW16 lattice), 24 (Leech latice)
   * P_{t,\ell}-Kyber, for \ell= 8 (E8 lattice) and t=32 (N=32 bytes), 64 (N=64 bytes)
 
